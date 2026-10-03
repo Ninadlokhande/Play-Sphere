@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>PlaySphere - Login / Sign Up</title>
+   <link rel="stylesheet" href="../Scripting/loginpage.css">
+
+</head>
+
+<body>
+
+    <!-- =========================
+         PAGE HEADER
+         ========================= -->
+
+    <header>
+
+        <h1>PlaySphere</h1>
+
+        <h2>Login / Sign Up</h2>
+
+    </header>
+    <hr>
+
+
+    <main>
+
+        <!-- =========================
+             LOGIN SECTION
+             ========================= -->
+
+        <section id="login">
+
+            <h3>Login</h3>
+
+            <p>
+                Please enter your email and password to login.
+            </p>
+
+
+            <form id="login-form">
+
+                <!-- Email -->
+
+                <div>
+
+                    <label for="login-email">
+                        Email Address:
+                    </label>
+
+                    <input
+                        type="email"
+                        id="login-email"
+                        name="login-email"
+                        placeholder="example@email.com"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+
+                <br>
+
+
+                <!-- Password -->
+
+                <div>
+
+                    <label for="login-password">
+                        Password:
+                    </label>
+
+                    <input
+                        type="password"
+                        id="login-password"
+                        name="login-password"
+                        placeholder="Enter your password"
+                        minlength="8"
+                        autocomplete="current-password"
+                        required
+                    >
+
+                </div>
+
+
+                <br>
+
+
+                <!-- Remember Me -->
+
+                <div>
+
+                    <input
+                        type="checkbox"
+                        id="remember"
+                        name="remember"
+                    >
+
+                    <label for="remember">
+                        Remember me
+                    </label>
+
+                </div>
+
+
+                <br>
+
+
+                <!-- Login Button -->
+
+                <button type="submit">
+                    Login
+                </button>
+
+                <p id="login-message" aria-live="polite"></p>
+
+                
+
+                <br><br>
+
+
+                <!-- Forgot Password -->
+
+                <a href="#">
+                    Forgot Password?
+                </a>
+
+            </form>
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- =========================
+             SIGN UP SECTION
+             ========================= -->
+
+        <section id="signup">
+
+            <h3>Sign Up</h3>
+
+            <p>
+                Please fill in all the fields to create a PlaySphere account.
+            </p>
+
+
+            <form id="signup-form">
+
+                <!-- Full Name -->
+
+                <div>
+
+                    <label for="signup-name">
+                        Full Name:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="signup-name"
+                        name="signup-name"
+                        placeholder="Ninad Lokhande"
+                        autocomplete="name"
+                        required
+                    >
+
+                </div>
+
+
+                <br>
+
+
+                <!-- Mobile -->
+
+                <div>
+
+                    <label for="signup-mobile">
+                        Mobile Number:
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="signup-mobile"
+                        name="signup-mobile"
+                        placeholder="9876543210"
+                        pattern="[0-9]{10}"
+                        maxlength="10"
+                        autocomplete="tel"
+                        required
+                    >
+
+                </div>
+
+
+                <br>
+
+
+                <!-- Date of Birth -->
+
+                <div>
+
+                    <label for="signup-dob">
+                        Date of Birth:
+                    </label>
+
+                    <input
+                        type="date"
+                        id="signup-dob"
+                        name="signup-dob"
+                        required
+                    >
+
+                </div>
+
+
+                <br>
+
+
+                <!-- Gender -->
+
+                <fieldset>
+
+                    <legend>Gender:</legend>
+
+
+                    <input
+                        type="radio"
+                        id="male"
+                        name="gender"
+                        value="male"
+                        required
+                    >
+
+                    <label for="male">
+                        Male
+                    </label>
+
+
+                    <input
+                        type="radio"
+                        id="female"
+                        name="gender"
+                        value="female"
+                    >
+
+                    <label for="female">
+                        Female
+                    </label>
+
+
+                    <input
+                        type="radio"
+                        id="other"
+                        name="gender"
+                        value="other"
+                    >
+
+                    <label for="other">
+                        Other
+                    </label>
+
+                </fieldset>
+
+
+                <br>
+
+
+                <!-- Email -->
+
+                <div>
+
+                    <label for="signup-email">
+                        Email Address:
+                    </label>
+
+                    <input
+                        type="email"
+                        id="signup-email"
+                        name="signup-email"
+                        placeholder="example@email.com"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+
+                <br>
+
+
+                <!-- Password -->
+
+                <div>
+
+                    <label for="signup-password">
+                        Password:
+                    </label>
+
+                    <input
+                        type="password"
+                        id="signup-password"
+                        name="signup-password"
+                        placeholder="Minimum 8 characters"
+                        minlength="8"
+                        autocomplete="new-password"
+                        required
+                    >
+
+                </div>
+
+
+                <br>
+
+
+                <!-- Confirm Password -->
+
+                <div>
+
+                    <label for="confirm-password">
+                        Confirm Password:
+                    </label>
+
+                    <input
+                        type="password"
+                        id="confirm-password"
+                        name="confirm-password"
+                        placeholder="Re-enter your password"
+                        minlength="8"
+                        autocomplete="new-password"
+                        required
+                    >
+
+                </div>
+
+
+                <br>
+
+
+                <!-- Sign Up Button -->
+                <button type="submit">
+                    Sign Up
+                </button>
+
+                <p id="Signup-message" aria-live="polite"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+    <hr>
+
+
+    <!-- =========================
+         FOOTER
+         ========================= -->
+
+    <footer>
+
+        <p>
+            © 2026 PlaySphere. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
